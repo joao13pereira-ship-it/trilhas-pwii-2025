@@ -21,3 +21,5 @@ console.log("nulo");
 console.log(typeof nulo);
 console.log("indefinido");
 console.log(typeof indefinido);
+
+
