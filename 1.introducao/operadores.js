@@ -4,6 +4,8 @@ Operadores em javascript
 - subtração
 * multiplicação
 / divisão
+= operador de atribuiçao
+
 */
 let x = 1;
 let y = 2;
@@ -14,5 +16,5 @@ console.log(" subtaraçao  ( x - y): "  + (x - y));
 console.log(" multiplicação   ( x * y): " + (x * y));
 console.log("divisão  ( x / y):  " +  (x / y));
 console.log("--------");
-console.log("1"+2);// concatena
+console.log("1"+2);// concatena ao inves de somar
 
