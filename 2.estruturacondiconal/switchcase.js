@@ -18,7 +18,4 @@ switch (idade){
 
 
 
-//Faça um programa que receba a nota de um aluno e exiba se ele está "Aprovado" (>= 60), "Recuperação" (40-59) ou "Reprovado" (< 40).
 
-let nota = 55;
-if( nota>= 60) 
