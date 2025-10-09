@@ -15,23 +15,19 @@ else if(numero1 === numero2 ){
 
 //programa que le idade eleicao
 
-let idade=21;
+let idade = 21;
 
-if(idade <=16){
-    console.log("O voto é facultativo!")
-}
-else if( idade <=17 ){
-    console.log("O voto é facultativo!")
-}
-else if( idade >=18 || idade <=69){
-    console.log("O VOTO É OBRIGATORIO!!")
-}
-else if( idade >=70){
-    console.log("O voto é facultativo!")
-}
-else if(idade <16) {
-    console.log("Sua idade é menor que a necessario para o voto!")
-}
-else(idade >110);{
-    console.log("Idade inaválida!")
+if (idade <= 16) {
+  console.log("O voto é facultativo!");
+} else if (idade <= 17) {
+  console.log("O voto é facultativo!");
+} else if (idade >= 18 || idade <= 69) {
+  console.log("O VOTO É OBRIGATORIO!!");
+} else if (idade >= 70) {
+  console.log("O voto é facultativo!");
+} else if (idade < 16) {
+  console.log("Sua idade é menor que a necessario para o voto!");
+} else idade > 110;
+{
+  console.log("Idade inaválida!");
 }

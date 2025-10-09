@@ -11,7 +11,7 @@ Sintaxe:
 
 while(condição){
 
--- bloco de codigoque sera executado repitidas vezes
+-- bloco de codigo que sera executado repitidas vezes
 }
 
 */
