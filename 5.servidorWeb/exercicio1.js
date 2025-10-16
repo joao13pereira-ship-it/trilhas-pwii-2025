@@ -10,28 +10,40 @@ const servidor = http.createServer((req, res) => {
         <title>PWII</title>
         </head>
         <body>
-        <h1>Página Principal</h1>    
+        <h1>Bem vindo ao meu servidor Node.js!</h1>    
         </body>
     <html>
     `);
     }
-    else if (req.url === '/sobre'){
+    else if (req.url === '/saudacao'){
         res.end(`
         <html>
         <head>
             <title>PWII</title>
             </head>
             <body>
-            <h1> Página Sobre!</h1>    
+            <h1>Olá,visitante!</h1>    
             </body>
         <html>
         `);
-    } // Added closing bracket for else if
+    } 
+    else {
+        res.end(`
+        <html>
+        <head>
+            <title>PWII</title>
+            </head>
+            <body>
+            <h1>Página não encontrada!</h1>    
+            </body>
+        <html>
+        `);
+    }
 
 }); 
 
 // Definindo a porta do servidor
-const porta = 3000;
+const porta = 3001;
 
 // Iniciando o servidor
 servidor.listen(porta, () => {
