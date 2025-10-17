@@ -4,7 +4,6 @@
     console.log("Número:" + i);
 } */
 
-
 /*Exiba números de 10 a 1 usando while.*/
 /* let i =10;
 while(i>=1){
@@ -21,9 +20,8 @@ for (let i = 1; i <= 100; i++) {
  */
 /*Exiba apenas os números pares entre 1 e 20 usando for.*/
 let numero;
-for (numero = 1; numero <=20; numero++) {
+for (numero = 1; numero <= 20; numero++) {
   if (numero % 2 === 0) {
     console.log("é um numero par: " + numero);
   }
 }
-

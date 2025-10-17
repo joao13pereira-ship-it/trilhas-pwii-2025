@@ -2,8 +2,8 @@
 const http = require("http");
 
 const servidor = http.createServer((req, res) => {
-    res.writeHead(200, { "Content-Type": "text/html;charset=utf-8" });
-    if (req.url ==='/'){
+  res.writeHead(200, { "Content-Type": "text/html;charset=utf-8" });
+  if (req.url === "/") {
     res.end(`
     <html>
     <head>
@@ -14,9 +14,8 @@ const servidor = http.createServer((req, res) => {
         </body>
     <html>
     `);
-    }
-    else if (req.url === '/saudacao'){
-        res.end(`
+  } else if (req.url === "/saudacao") {
+    res.end(`
         <html>
         <head>
             <title>PWII</title>
@@ -26,9 +25,8 @@ const servidor = http.createServer((req, res) => {
             </body>
         <html>
         `);
-    } 
-    else {
-        res.end(`
+  } else {
+    res.end(`
         <html>
         <head>
             <title>PWII</title>
@@ -38,9 +36,8 @@ const servidor = http.createServer((req, res) => {
             </body>
         <html>
         `);
-    }
-
-}); 
+  }
+});
 
 // Definindo a porta do servidor
 const porta = 3001;
