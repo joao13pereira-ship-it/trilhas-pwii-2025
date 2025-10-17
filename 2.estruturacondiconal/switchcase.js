@@ -1,4 +1,4 @@
-// extrutura condicional switch case
+// extrutura condicional switch case/
 
 let idade = 16;
 switch (idade) {

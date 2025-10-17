@@ -10,3 +10,4 @@ if (nota >= 60 && nota <= 100) {
 } else {
   console.log("Nota inválida!");
 }
+//

@@ -1,4 +1,4 @@
-/* Operadores logicos e de comparação em javascript
+/*Operadores logicos e de comparação em javascript
 == (igualdade)- compara valores, ignorando o tipo
 === (igualdade estrita)- compara valores e tipos
 != (diferente)- compara valores, ignorando o tipo
@@ -6,8 +6,7 @@
 
 && (E)- retorna true se abas as expressoes forem verdadeiras
 || (OU) - retorna true se pelo manos uma das expressoes forem verdadeiras
-! (NÃO) - inverte o valor da expressão
-
+! (NÃO) - inverte o valor da expressão*/
 
 
 //console.log(1==1);
@@ -30,4 +29,3 @@ if (salario <= 2000) {
 } else {
   console.log("Salario acima de R$5000,00");
 }
-*/

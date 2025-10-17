@@ -25,3 +25,4 @@ switch (numero) {
   default:
     console.log("Digite um numero de 1 a 7!");
 }
+//

@@ -31,3 +31,4 @@ if (idade <= 16) {
 {
   console.log("Idade inaválida!");
 }
+//
