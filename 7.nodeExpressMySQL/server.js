@@ -1,11 +1,32 @@
 // Importa o módulo Express
 const express = require("express");
+// importa o módulo do mysql
+const mysql = require('mysql2');
+app.use(express.json());
+
 
 // Cria uma aplicação Express
 const app = express();
 
 // Define a porta do servidor
 const PORT = 3000;
+
+// Configuração a conexão com o banco de dados MySQL
+const bd = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'ifsuldeminas',
+  database: 'escola',
+  });
+  // Conecta ao banco de dados MySQL
+  bd.connect(err => {
+    if (err) {
+      console.error('Erro ao conectar ao MySQL:', err);
+      return;
+    }
+    console.log('Conectado ao banco de dados MySQL!');
+  });
+  
 
 // Rota principal
 app.get("/", (req, res) => {
