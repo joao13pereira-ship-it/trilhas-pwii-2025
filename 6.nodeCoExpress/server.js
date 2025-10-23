@@ -10,5 +10,7 @@ app.listen(PORT, () => {
 });
 
 app.get(`/`,(req,res) => {
-    res.send(' <h2>Pagina Principal!</h2>');
+    res.send(
+        ' <h2>Pagina Principal!</h2>'
+        );
 });
