@@ -22,7 +22,7 @@ bd.connect((err) => {
   if (err) {
     console.error("Erro ao conectar ao MySQL:", err);
     return;
-  }
+  } 
   console.log("Conectado ao banco de dados MySQL!");
 });
 
@@ -40,6 +40,21 @@ app.get("/sobre", (req, res) => {
 app.get("/contato", (req, res) => {
   res.send("<h4>Página Contato!</h4>");
 });
+// Rota "Alunos"
+app.get("/alunos",(req,res)=>{
+  const sql= 'SELECT * FROM alunos';
+  bd.query(sql,(err,result)=>{
+    if(err){
+      console.error('Erro ao buscar alunos:', err);
+      res.status(500).send('Erro ao buscar alunos.');
+      return;
+    }
+    console.log('Alunos encontrados:',result);
+    res.json(result);
+
+  })  
+ })
+
 
 // Rota "Curso"
 app.get("/curso", (req, res) => {
@@ -60,6 +75,7 @@ app.get("/curso", (req, res) => {
 app.use((req, res) => {
   res.status(404).send("<h1>404 - Página Não Encontrada</h1>");
 });
+
 
 // Inicializa o servidor
 app.listen(PORT, () => {
